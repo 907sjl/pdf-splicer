@@ -46,7 +46,7 @@ An example table of contents file, [referrals_example_toc](https://github.com/90
 can be found in the repository.  This example uses input PDFs from my sample 
 referrals report in [referrals_powerbi](https://github.com/907sjl/referrals_powerbi).    
 
-The source for this example is a single extract of referral process measures 
+The input for this example is a single PDF of referral process measures 
 for multiple clinics.  This one PDF will be split into a report for each of those 
 clinics.  Another PDF with cover sheet pages for each clinic is spliced into each 
 of the destination PDFs for each clinic.    
