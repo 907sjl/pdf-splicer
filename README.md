@@ -42,7 +42,7 @@ destination PDF file.  Multiple destination PDF files can be mapped in one
 table of contents file.    
 
 ## Example    
-An example table of contents file, [referrals_example_toc](https://github.com/907sjl/pdf-splicer/blob/main/referrals_example_toc.csv) 
+An example table of contents file, [referrals_example_toc](https://github.com/907sjl/pdf-splicer/blob/main/referrals_example_toc.csv), 
 can be found in the repository.  This example uses input PDFs from my sample 
 referrals report in [referrals_powerbi](https://github.com/907sjl/referrals_powerbi).    
 
