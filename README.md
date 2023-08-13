@@ -42,9 +42,11 @@ destination PDF file.  Multiple destination PDF files can be mapped in one
 table of contents file.    
 
 ## Example    
-An example table of contents file is given in the repository.  This example 
-uses example input PDFs from my sample referrals report in 
-[referrals_powerbi](https://github.com/907sjl/referrals_powerbi).  A single 
-extract of referral process measures for multiple clinics is split into a 
-report for each of those clinics.  A single PDF with cover sheet pages for 
-each clinic is spliced into each of the destination PDFs for each clinic.    
+An example table of contents file, [referrals_example_toc](https://github.com/907sjl/pdf-splicer/blob/main/referrals_example_toc.csv) 
+can be found in the repository.  This example uses input PDFs from my sample 
+referrals report in [referrals_powerbi](https://github.com/907sjl/referrals_powerbi).    
+
+The source for this example is a single extract of referral process measures 
+for multiple clinics.  This one PDF will be split into a report for each of those 
+clinics.  Another PDF with cover sheet pages for each clinic is spliced into each 
+of the destination PDFs for each clinic.    
