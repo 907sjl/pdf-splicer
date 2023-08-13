@@ -23,3 +23,28 @@ positional arguments:
     src_folder      Required: Folder with source PDF files        
     dest_folder     Required: Folder for destination PDF files    
 ```    
+
+## Table of Contents File    
+The table of contents file instructs the script as to how many destination PDFs 
+will result from running the script, and where to source each page of the 
+destination PDFs. 
+
+It has six columns:
+1. **Report**: The name of the destination PDF file
+2. **Page**: The page number in the destination PDF file
+3. **Bookmark**: The bookmarked section that includes this page
+4. **Source File**: The name of the source PDF file for this page
+5. **Source Page**: The page number in the source PDF file to use
+6. **Folder**: A sub-folder in the output folder to write to 
+
+Each row in the table of contents file is intended to be a new page in a 
+destination PDF file.  Multiple destination PDF files can be mapped in one 
+table of contents file.    
+
+## Example    
+An example table of contents file is given in the repository.  This example 
+uses example input PDFs from my sample referrals report in 
+[referrals_powerbi](https://github.com/907sjl/referrals_powerbi).  A single 
+extract of referral process measures for multiple clinics is split into a 
+report for each of those clinics.  A single PDF with cover sheet pages for 
+each clinic is spliced into each of the destination PDFs for each clinic.    
