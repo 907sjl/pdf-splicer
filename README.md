@@ -50,3 +50,8 @@ The input for this example is a single PDF of referral process measures
 for multiple clinics.  This one PDF will be split into a report for each of those 
 clinics.  Another PDF with cover sheet pages for each clinic is spliced into each 
 of the destination PDFs for each clinic.    
+
+The shell command to run this example is:
+```    
+python pdf_splicer.py referrals_example_toc.csv in out 
+```    
