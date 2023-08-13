@@ -51,6 +51,10 @@ for multiple clinics.  This one PDF will be split into a report for each of thos
 clinics.  Another PDF with cover sheet pages for each clinic is spliced into each 
 of the destination PDFs for each clinic.    
 
+This example also recreates the input PDF while adding bookmarks for each clinic. 
+The bookmarks make it much easier for viewers to use the report.  The bookmark 
+names and pages are supplied in the table of contents file.    
+
 The shell command to run this example is:
 ```    
 python pdf_splicer.py referrals_example_toc.csv in out 
