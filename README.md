@@ -10,10 +10,10 @@ table of contents file.  This script processes the mappings in the table of
 contents file and produces the resulting PDFs.    
 
 This has been useful for issuing page formatted reports that are compilations of 
-PDF output from different sources.  You might have PDFs collected from others 
-that contain data, along with visualizations from R scripts, Python scripts, 
+PDF output from different sources.  You might have PDFs that you collect from 
+other groups, along with visualizations from R scripts, Python scripts, 
 or Power BI exports.  This script allows you to compile a single PDF digest from 
-those separate documents with a template that can be rerun as often as needed.    
+those separate documents using a template that can be rerun as often as needed.    
 
 ## Command Line     
 ```    
