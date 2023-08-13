@@ -18,7 +18,8 @@ those separate documents with a template that can be rerun as often as needed.
 ## Command Line    
 usage: pdf_splicer.py [-h] toc src_folder dest_folder    
 positional arguments:    
-|-----------|-------------------------------------------|    
-|toc        |Required: Table of contents file           |    
-|src_folder |Required: Folder with source PDF files     |    
-|dest_folder|Required: Folder for destination PDF files |    
+<table border="0" cellpadding="0" cellspacing="0" style="margin:0px; padding=0px;">
+<tr><td>toc</td><td>Required: Table of contents file</td></tr>
+<tr><td>src_folder</td><td>Required: Folder with source PDF files</td></tr>    
+<tr><td>dest_folder</td><td>Required: Folder for destination PDF files</td></tr>
+</table>
