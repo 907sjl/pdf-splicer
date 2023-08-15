@@ -11,7 +11,7 @@ contents file and produces the resulting PDFs.
 
 This has been useful for issuing page formatted reports that are compilations of 
 PDF output from different sources.  You might have PDFs that you collect from 
-other groups, along with visualizations from R scripts, Python scripts, 
+others, along with visualizations from R scripts, Python scripts, 
 or Power BI exports.  This script allows you to compile a single PDF digest from 
 those separate documents using a template that can be rerun as often as needed.    
 
@@ -32,7 +32,7 @@ destination PDFs.
 It has six columns:
 1. **Report**: (Required) The name of the destination PDF file
 2. **Page**: (Required) The page number in the destination PDF file
-3. **Bookmark**: (Optional) The bookmarked section that includes this page
+3. **Bookmark**: (Optional) The bookmark for this page
 4. **Source File**: (Required) The name of the source PDF file for this page
 5. **Source Page**: (Required) The page number in the source PDF file to use
 6. **Folder**: (Optional) A sub-folder in the output folder to write to 
@@ -45,12 +45,15 @@ Any table of contents record missing a value in the **Report**, **Source File**,
 or **Source Page** columns will be skipped.  Any records missing a value in 
 the **Page** column will use the default page number zero.  
 
-Technically, the script produces pages in the destination PDF in the same 
+Technically, the script produces pages in the same 
 order as the values in the **Page** column, not necessarily at the exact page 
 number given in the table of contents file.  Having more than one page with 
 the same destination page number will not stop the script from 
 working.  The ordering of pages that share the same page number is not 
 specified.    
+
+When sequential pages share the same bookmark, the bookmark will only be applied 
+to the first page in the sequence.    
 
 ## Example    
 An example table of contents file, [referrals_example_toc](https://github.com/907sjl/pdf-splicer/blob/main/referrals_example_toc.csv), 
