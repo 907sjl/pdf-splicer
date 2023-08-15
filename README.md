@@ -30,16 +30,27 @@ will result from running the script, and where to source each page of the
 destination PDFs. 
 
 It has six columns:
-1. **Report**: The name of the destination PDF file
-2. **Page**: The page number in the destination PDF file
-3. **Bookmark**: The bookmarked section that includes this page
-4. **Source File**: The name of the source PDF file for this page
-5. **Source Page**: The page number in the source PDF file to use
-6. **Folder**: A sub-folder in the output folder to write to 
+1. **Report**: (Required) The name of the destination PDF file
+2. **Page**: (Required) The page number in the destination PDF file
+3. **Bookmark**: (Optional) The bookmarked section that includes this page
+4. **Source File**: (Required) The name of the source PDF file for this page
+5. **Source Page**: (Required) The page number in the source PDF file to use
+6. **Folder**: (Optional) A sub-folder in the output folder to write to 
 
 Each row in the table of contents file is intended to be a new page in a 
 destination PDF file.  Multiple destination PDF files can be mapped in one 
 table of contents file.    
+
+Any table of contents record missing a value in the **Report**, **Source File**, 
+or **Source Page** columns will be skipped.  Any records missing a value in 
+the **Page** column will use the default page number zero.  
+
+Technically, the script produces pages in the destination PDF in the same 
+order as the values in the **Page** column, not necessarily at the exact page 
+number given in the table of contents file.  Having more than one page with 
+the same destination page number will not stop the script from 
+working.  The ordering of pages that share the same page number is not 
+specified.    
 
 ## Example    
 An example table of contents file, [referrals_example_toc](https://github.com/907sjl/pdf-splicer/blob/main/referrals_example_toc.csv), 
